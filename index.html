@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://www.cornify.com/js/cornify.js"
+    ></script>
+    <script src="App.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+
+    <title>Guess Game</title>
+  </head>
+
+  <body>
+    <h2 class="heder">Bulls And Cows</h2>
+    <section class="container">
+      <div class="main">
+        <div class="input">
+          <input maxlength="4" id="input" type="text" />
+          <div class="tool-tip" id="toolTip"></div>
+        </div>
+        <div class="btn">
+          <button class="btn_guess" id="tryNumbers">Try these Digits</button>
+          <button class="btn_start-over" id="starOver">Start over</button>
+        </div>
+        <div class="game-board">
+          <h2>
+            the code:
+            <h2 id="codePlace"></h2>
+          </h2>
+        </div>
+        <div class="game-results">
+          <h2>Rounds: <span id="numOfRounds"></span></h2>
+          <h2>Right position:<span id="numOfSuccess"></span></h2>
+          <h2>Wrong position: <span id="numOfWrongPlace"></span></h2>
+        </div>
+      </div>
+      <div>
+        <details class="details">
+          <summary>How to play?</summary>
+          <span class="details_text">
+            You need to guess a 4 digits number. <br />
+            The number can't include 0, <br />
+            and each digit can be used only once. <br />
+            If you got the right digit and placed it in the right position,
+            that's called a Bull and you will see the digit in that position. If
+            you got the right digit but placed it in the WRONG position, that
+            calls a Cow and you will see the letter C in that position. If you
+            didn't got it right you will see _ in that position.</span
+          >
+        </details>
+      </div>
+    </section>
+  </body>
+</html>

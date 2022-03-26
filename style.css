@@ -1,0 +1,101 @@
+body {
+  font-family: Courier;
+  padding: 2rem;
+  font-size: 1.3rem;
+  position: relative;
+}
+.heder {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.main {
+  width: 30%;
+  margin: 0 1rem;
+}
+.details {
+  width: 100%;
+  margin-left: 15rem;
+  cursor: help;
+}
+.details_text {
+  width: 70%;
+  display: flex;
+}
+input,
+.btn_guess,
+.btn_start-over {
+  width: 20rem;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input {
+  text-align: center;
+  cursor: text;
+}
+.tool-tip {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: red;
+}
+.game-board {
+  margin-top: 1rem;
+}
+.game-results {
+  margin: 1rem 0;
+}
+.hidden {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+.winner {
+  font-size: 8rem;
+  position: absolute;
+  font-weight: 700;
+  color: #0081eb;
+  width: 60%;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  animation: win 5s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes win {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+    color: #442288;
+  }
+
+  30% {
+    animation-timing-function: ease-in;
+    transform: scale(0.6);
+    color: #b5d33d;
+  }
+
+  50% {
+    animation-timing-function: ease-out;
+    transform: scale(0.9);
+    color: #fed23f;
+  }
+
+  70% {
+    animation-timing-function: ease-in;
+    transform: scale(0.5);
+    color: #eb7d5b;
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    color: #a926bb;
+  }
+}
